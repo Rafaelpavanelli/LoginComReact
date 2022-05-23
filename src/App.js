@@ -1,9 +1,9 @@
-
-import Login from "./Pages/Login";
 import RoutesApp from "./routes";
+import Login from "./Pages/Login";
+
 function App() {
   return (
-    <Login />
+  <RoutesApp />
   );
 }
 

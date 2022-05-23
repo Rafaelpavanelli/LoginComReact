@@ -1,10 +1,9 @@
 import './login.modules.css'
-import RoutesApp from '../../routes';
-import {Router,Link} from 'react-router-dom'
-import Register from '../register';
+import '../../routes'
+import {Link} from 'react-router-dom'
+
 import Icon from './Business merger-amico.png'
 
-import { FaUserAstronaut } from 'react-icons/fa';
 
 
 function Login(){
@@ -32,7 +31,7 @@ function Login(){
                     </div>
                     <button className='btn-login' onClick={''}>Login</button>
                     <p className='p-cadastro'>Não é cadastrado?</p>
-                    <button className='btn-cadastro' onClick={<Link to="/register"/>}>Registrar</button>
+                    <Link to='/Register'><button className='btn-cadastro'>Login</button></Link>
                 </div>
             </div>
         </main>
