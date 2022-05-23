@@ -7,7 +7,7 @@ function Navbar(){
                 <div className="User">
                     <p>Nome do Usuario</p>
                     <FaUserAstronaut/>
-                    </div>
+                    
                 </div>
             </header>
     )
