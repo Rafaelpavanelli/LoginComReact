@@ -5,8 +5,6 @@ import firebase from '../../FirebaseConnection'
 import Icon from './Business merger-amico.png'
 import { useState } from 'react'
 
-
-
 function Login(){
     const [user,setUser]=useState('')
     const [senha,setSenha]=useState('')
