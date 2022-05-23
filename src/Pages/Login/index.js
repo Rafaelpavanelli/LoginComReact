@@ -3,14 +3,15 @@ import '../../routes'
 import {Link} from 'react-router-dom'
 
 import Icon from './Business merger-amico.png'
+import { useState } from 'react'
 
 
 
 function Login(){
-    
+    const [user,setUser]=useState('')
    
     return(
-        
+      
         <main>
             <div className='left-login'>
                 <h1> 
@@ -22,7 +23,7 @@ function Login(){
                 <div className='card-login'>
                     <h1>Login</h1>
                     <div className='textfield'>
-                        <label for='usuario'>Usuário</label>
+                        <label for='usuario' onChange={setUser}>Usuário</label>
                         <input type='text' name='usuario' placeholder='Usuario'/>
                     </div>
                     <div className='textfield'>
