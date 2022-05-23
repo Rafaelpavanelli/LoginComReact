@@ -6,14 +6,14 @@ function Register(){
     return(
         
            <main>
-            <div className='left-login'>
+            <div className='left-register'>
                 <h1> 
                   Cadastro
                 </h1>
-              <img src={Icon} className='login-image'/>
+              <img src={Icon} className='register-image'/>
             </div>
-            <div className='right-login'>
-                <div className='card-login'>
+            <div className='right-register'>
+                <div className='card-register'>
                     <h1>Cadastro</h1>
                     <div className='textfield'>
                         <label for='nome'>Nome</label>
@@ -32,9 +32,9 @@ function Register(){
                         <input type='password' name='senha' placeholder='Senha'/>
                     </div>
                 
-                    <button className='btn-login' onClick={''}>Cadastrar</button>
-                    <p className='p-cadastro'>Ja tem login</p>
-                    <Link to='/'>Login</Link>
+                    <button className='btn-register' onClick={''}>Cadastrar</button>
+                    <label for='login' className='p-cadastro'>Ja tem login</label>
+                    <Link className='link-login' name='login' to='/'>Login</Link>
                 </div>
             </div>
         </main>

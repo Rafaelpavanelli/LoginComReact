@@ -31,7 +31,7 @@ function Login(){
                     </div>
                     <button className='btn-login' onClick={''}>Login</button>
                     <p className='p-cadastro'>Não é cadastrado?</p>
-                    <Link to='/Register'><button className='btn-cadastro'>Login</button></Link>
+                    <Link to='/Register'><button className='btn-cadastro'>Cadastrar-se</button></Link>
                 </div>
             </div>
         </main>
