@@ -1,7 +1,7 @@
 import './login.modules.css'
 import '../../routes'
 import {Link} from 'react-router-dom'
-
+import firebase from '../../FirebaseConnection'
 import Icon from './Business merger-amico.png'
 import { useState } from 'react'
 
@@ -9,6 +9,7 @@ import { useState } from 'react'
 
 function Login(){
     const [user,setUser]=useState('')
+    const [senha,setSenha]=useState('')
    
     return(
       
@@ -24,11 +25,11 @@ function Login(){
                     <h1>Login</h1>
                     <div className='textfield'>
                         <label for='usuario' onChange={setUser}>Usuário</label>
-                        <input type='text' name='usuario' placeholder='Usuario'/>
+                        <input type='text' name='usuario' value={user} onChange={(e)=>setUser(e.target.value)} placeholder='Usuario'/>
                     </div>
                     <div className='textfield'>
                         <label for='senha'>Senha</label>
-                        <input type='password' name='senha' placeholder='Senha'/>
+                        <input type='password' name='senha' value={senha} onChange={(e)=>setSenha(e.target.value)}placeholder='Senha'/>
                     </div>
                     <button className='btn-login' onClick={''}>Login</button>
                     <p className='p-cadastro'>Não é cadastrado?</p>
