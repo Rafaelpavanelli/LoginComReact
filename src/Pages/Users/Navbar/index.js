@@ -2,6 +2,7 @@ import {FaUserAstronaut} from 'react-icons/fa'
 import {GiHamburgerMenu} from 'react-icons/gi'
 import { Link } from 'react-router-dom'
 import { toast} from 'react-toastify';
+import logout from '../../../components/logout';
 
 
 import Login from '../../Login'
@@ -14,7 +15,9 @@ function Navbar(){
                 <div className="User">
                     <p>Nome do Usuario</p>
                     <FaUserAstronaut/>
-                    <Link to= '/ '><button onClick={()=>{toast.success('Logout Realizado')}}>Logout</button></Link>
+                    <button onClick={()=>{
+                        <logout />
+                        toast.success('Logout Realizado')}}>Logout</button>
                     
                      </div>
             </header>
