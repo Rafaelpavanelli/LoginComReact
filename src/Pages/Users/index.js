@@ -1,8 +1,8 @@
 import Navbar from './Navbar'
 
-function Users(){
+function Users(user){
     return(
-       <Navbar />
+       <Navbar props={user}/>
     )
 }
 export default Users

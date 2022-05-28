@@ -8,13 +8,12 @@ import logout from '../../../components/logout';
 import Login from '../../Login'
 
 import './Navbar.modules.css'
-function Navbar(){
+function Navbar(user){
     return(
             <header>
                 <h1>BetaDev</h1>
                 <div className="User">
-                    <p>Nome do Usuario</p>
-                    <FaUserAstronaut/>
+                    <p>`{user.nome}`</p>
                     <button onClick={()=>{
                         <logout />
                         toast.success('Logout Realizado')}}>Logout</button>

@@ -1,18 +1,15 @@
 import firebase from "../FirebaseConnection"
 import { db } from '../FirebaseConnection';
+import {Link, Redirect} from 'react-router-dom'
 import { collection, getDocs, query, where, doc, setDoc} from "firebase/firestore";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import Users from "../Pages/Users";
+import { toast} from 'react-toastify';
 
 
 
-async function Login(user){
-   await firebase.auth().signInWithEmailAndPassword(user.email,user.password)
-    .then((props)=>
-       console.log(props.user.uid)
-    )
-    .catch((error)=>
-       console.log(error)
-    )
-    }
+ 
+
+
 
  export default Login
