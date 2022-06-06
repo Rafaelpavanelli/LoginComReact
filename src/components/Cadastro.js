@@ -7,14 +7,14 @@ import { collection, getDocs, query, where, doc, setDoc} from "firebase/firestor
 import { db } from '../FirebaseConnection';
 import { v4 as uuidv4 } from 'uuid';
 import { wait } from "@testing-library/user-event/dist/utils";
-import Users from "../Pages/Users";
+
 
 const Cadastro = async (props) => {
         if(props.nome!="" && props.userName!="" &&props.email!=""&&props.password!=""){
     console.log(props)
     await firebase.auth().createUserWithEmailAndPassword(props.email,props.password)
     .then((user)=>{
-        console.log("cadastro no auth feito");
+        toast.success('Cadastro Realizados')
          firebase.firestore().collection('users')
         .doc(user.user.uid)
         .set({

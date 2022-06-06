@@ -6,9 +6,7 @@ import {Link} from 'react-router-dom'
 import firebase from '../../FirebaseConnection'
 import Icon from './Business merger-amico.png'
 
-import { useState } from 'react'
-import Users from '../Users'
-
+import { useState } from 'react'    
 
        
        
@@ -36,8 +34,8 @@ function Login(){
     }
    
     const[user, setUser] = useState({
-        email: 'gvxvvfbgx@gmail.com',
-        password: 'rafael330',
+        email: '',
+        password: '',
     })
    
     return(
